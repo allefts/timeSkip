@@ -1,14 +1,44 @@
-import './App.css';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+//1980s
 import Nav from "./Components/1980/Nav";
-import Body from "./Components/1980/Body"
+import Body from "./Components/1980/Body";
+import Footer from "./Components/1980/Footer";
+
+//2000s
+import Nav2000 from "./Components/2000/Nav2000";
+
+//2020
+import Nav2020 from "./Components/2020/Nav2020";
+import Banner2020 from "./Components/2020/Banner2020";
+import About2020 from "./Components/2020/About2020";
+import Trends from "./Components/2020/Trends";
+import Footer2020 from "./Components/2020/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Router exact path="/">
-        <Nav/>
-        <Body/>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Nav />
+            <Body />
+            <Footer />
+          </Route>
+          <Route exact path="/2000">
+            <Nav2000 />
+          </Route>
+          <Route exact path="/2020">
+            <Nav2020 />
+            <div style={{ backgroundColor: "#062743" }} className="bg">
+              <Banner2020 />
+              <About2020 />
+              <Trends />
+              <Footer2020 />
+            </div>
+          </Route>
+        </Switch>
       </Router>
     </div>
   );

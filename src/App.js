@@ -17,6 +17,7 @@ import Banner2020 from "./Components/2020/Banner2020";
 import About2020 from "./Components/2020/About2020";
 import Trends from "./Components/2020/Trends";
 import Footer2020 from "./Components/2020/Footer";
+import Wrap from "./Components/2020/Wrap";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
               <About2020 />
               <Trends />
               <Footer2020 />
+              <Wrap />
             </div>
           </Route>
         </Switch>

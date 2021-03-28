@@ -7,13 +7,13 @@ const trends = [
     Frontend: ["HTML", "CSS", "Javascript", "React", "Angular", "Vue"],
   },
   {
-    Backend: ["NodeJS", "PHP", "Java", "GO", "Python", "C#", "Ruby on Rails"],
+    Backend: ["NodeJS", "PHP", "Java", "GO", "Python", "C#"],
   },
   {
     Design: ["Figma", "Canva", "Sketch", "Adobe"],
   },
   {
-    Data: ["SQL", "PostgreSQL", "Cassandra", "MongoDB"],
+    Data: ["SQL", "Cassandra", "MongoDB"],
   },
 ];
 
@@ -76,13 +76,13 @@ const Trends2020 = () => {
   return (
     <StyledTrends>
       <div className="trendsContainer">
-        <h1 className="trendsTitle">21st Century Web Trends</h1>
+        <h1 className="trendsTitle">21st Century Web Tools</h1>
         <h2 className="trendsSubTitle">
           Some of the magical technologies available out there!
         </h2>
         <div className="line"></div>
         <div className="trendCardsContainer">{sendTrends}</div>
-        <div className="line"></div>
+        {/* <div className="line"></div> */}
       </div>
     </StyledTrends>
   );

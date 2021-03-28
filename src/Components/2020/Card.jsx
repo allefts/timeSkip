@@ -25,7 +25,7 @@ const StyledCard = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     z-index: 1;
   }
 
@@ -45,16 +45,18 @@ const StyledCard = styled.div`
     font-weight: 700;
     margin: 2rem;
     font-size: 2.5rem;
-    color: white;
+    color: #f96d15;
   }
 
   // color: #f96d15;
   // color: white;
 
   .cardText {
-    font-family: Montserrat;
-    font-size: 1.4rem;
-    color: #f96d15;
+    font-family: Open Sans;
+    font-weight: 400;
+    color: white;
+    line-height: 1.8;
+    font-size: 1rem;
     margin: 1rem;
   }
 `;

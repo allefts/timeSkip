@@ -27,7 +27,7 @@ const sendTrends = trends.map((trend, index) => {
 });
 
 const StyledTrends = styled.div`
-  height: 100vh;
+  // height: 100vh;
   margin-top: 8rem;
   width: 100%;
 
@@ -57,6 +57,16 @@ const StyledTrends = styled.div`
     flex-flow: row wrap;
     justify-content: space-evenly;
     // align-items: center;
+  }
+
+  @media screen and (max-width: 644px) {
+    .trendsTitle {
+      font-size: 3rem;
+    }
+
+    .trendsSubTitle {
+      font-size: 1.5rem;
+    }
   }
 `;
 

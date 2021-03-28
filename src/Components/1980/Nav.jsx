@@ -55,7 +55,7 @@ const Nav = () => {
           <a className="nav-link">Home</a>
         </li>
         <li>
-          <a className="nav-link">Blog</a>
+          <a className="nav-link">Gallery</a>
         </li>
         <li>
           <a className="nav-link">Contact</a>

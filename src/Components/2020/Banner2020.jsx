@@ -89,6 +89,24 @@ const Styled2020Banner = styled.div`
       transform: translateY(10px);
     }
   }
+
+  @media screen and (max-width: 772px) {
+    .banner {
+      margin: 0 auto;
+    }
+
+    .bannerTitle {
+      font-size: 2rem;
+    }
+
+    .bannerTextContainer {
+      flex-flow: column;
+    }
+
+    .bannerText {
+      font-size: 1rem;
+    }
+  }
 `;
 
 const Banner2020 = () => {

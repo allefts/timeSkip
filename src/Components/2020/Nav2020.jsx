@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { AiFillFire } from "react-icons/ai";
+import "../../App.css";
 
 //COLORS
 //Orange: #f96d15
@@ -16,6 +17,7 @@ const Styled2020Nav = styled.div`
   position: fixed;
   z-index: 3;
   // background-color: #062743;
+  background-color: #131313;
 
   @keyframes slideUp {
     from {
@@ -75,11 +77,41 @@ const Styled2020Nav = styled.div`
       }
     }
   }
+
+  .hamburger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 2px;
+    display: none;
+
+    .line {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .right-content {
+      .nav-links {
+        display: none;
+      }
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
 `;
 
 const Nav2020 = () => {
   return (
-    <Styled2020Nav>
+    <Styled2020Nav className="navbar">
       <div className="left-content">
         <h2 className="fireIcon">
           <AiFillFire />
@@ -87,6 +119,11 @@ const Nav2020 = () => {
         <h2 className="navTitle">Time Skip</h2>
       </div>
       <div className="right-content">
+        <div className="hamburger">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
         <ul className="nav-links">
           <li className="nav-link">About</li>
           <li className="nav-link">Gallery</li>

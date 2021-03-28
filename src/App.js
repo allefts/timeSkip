@@ -8,6 +8,8 @@ import Footer from "./Components/1980/Footer";
 
 //2000s
 import Nav2000 from "./Components/2000/Nav2000";
+import Body2000 from "./Components/2000/Body2000";
+import Footer2000 from "./Components/2000/Footer2000";
 
 //2020
 import Nav2020 from "./Components/2020/Nav2020";
@@ -28,6 +30,8 @@ function App() {
           </Route>
           <Route exact path="/2000">
             <Nav2000 />
+            <Body2000 />
+            <Footer2000 />
           </Route>
           <Route exact path="/2020">
             <Nav2020 />
